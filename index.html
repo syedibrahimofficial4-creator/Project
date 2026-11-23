@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SportZone</title>
+<style>
+:root{--navy:#0b1f3a;--green:#1fa35c;--orange:#ff7a1a;--bg:#f4f7fb;--card:#fff;--text:#1c2733;--muted:#5b6b7b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+header{background:var(--navy);position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.logo{color:#fff;font-size:1.4rem;font-weight:800;letter-spacing:.5px}
+.logo span{color:var(--orange)}
+nav a{color:#cfd9e6;margin-left:18px;font-weight:600;padding:6px 2px;border-bottom:3px solid transparent;transition:.2s}
+nav a:hover,nav a.active{color:#fff;border-bottom-color:var(--orange)}
+.hero{color:#fff;text-align:center;padding:90px 20px;background:linear-gradient(135deg,rgba(11,31,58,.92),rgba(31,163,92,.85))}
+.hero.cricket{background:linear-gradient(135deg,#0b3a1f,#1fa35c)}
+.hero.football{background:linear-gradient(135deg,#0b1f3a,#2a6fdb)}
+.hero.basketball{background:linear-gradient(135deg,#7a2a00,#ff7a1a)}
+.hero h1{font-size:2.8rem;margin-bottom:10px}
+.hero p{max-width:650px;margin:auto;font-size:1.15rem;opacity:.95}
+.btn{display:inline-block;margin-top:24px;background:var(--orange);color:#fff;padding:12px 28px;border-radius:30px;font-weight:700;transition:.2s}
+.btn:hover{transform:translateY(-2px);background:#e86a0c}
+main{max-width:1100px;margin:auto;padding:40px 20px}
+h2{color:var(--navy);margin-bottom:14px;font-size:1.7rem;border-left:6px solid var(--orange);padding-left:12px}
+h3{color:var(--navy);margin:8px 0}
+section{margin-bottom:44px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:var(--card);border-radius:14px;padding:24px;box-shadow:0 4px 14px rgba(11,31,58,.08);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 24px rgba(11,31,58,.15)}
+.card .icon{font-size:2.6rem}
+.card p{color:var(--muted);margin-top:6px}
+.card .more{display:inline-block;margin-top:12px;color:var(--green);font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;text-align:center}
+.stat{background:var(--navy);color:#fff;border-radius:12px;padding:20px}
+.stat b{display:block;font-size:2rem;color:var(--orange)}
+ul.list{margin:8px 0 0 22px;color:var(--muted)}
+ul.list li{margin-bottom:6px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(11,31,58,.08)}
+th{background:var(--navy);color:#fff;text-align:left;padding:12px}
+td{padding:12px;border-bottom:1px solid #e6ecf2}
+tr:nth-child(even) td{background:#f8fafc}
+.note{background:#fff6e5;border-left:5px solid var(--orange);padding:14px 18px;border-radius:8px;margin-top:14px}
+footer{background:var(--navy);color:#a9b8c9;text-align:center;padding:26px 20px;margin-top:30px}
+@media(max-width:600px){.hero h1{font-size:2rem}nav a{margin-left:10px;font-size:.9rem}}
+
+html{scroll-behavior:smooth}section.page{scroll-margin-top:60px}
+</style></head><body>
+<header><div class="nav"><a class="logo" href="#home">Sport<span>Zone</span></a>
+<nav><a href="#home">Home</a><a href="#cricket">Cricket</a><a href="#football">Football</a><a href="#basketball">Basketball</a></nav></div></header>
+<div class="page" id="home">
+<div class="hero"><h1>Welcome to SportZone</h1><p>Your home for everything sports: the games people play, the rules that shape them, and the stories behind them.</p><a class="btn" href="#sports">Explore Sports</a></div>
+<main>
+<section><h2>What is Sport?</h2>
+<p>Sport is any physical activity played with rules, where people compete as individuals or teams. Sports keep the body fit, build discipline and teamwork, and bring communities together. From neighbourhood grounds to giant stadiums, billions of people play and watch sport every year.</p></section>
+<section><div class="stats">
+<div class="stat"><b>3.5B+</b>Fans worldwide follow football</div>
+<div class="stat"><b>11</b>Players per football or cricket side</div>
+<div class="stat"><b>5</b>Players per basketball side on court</div>
+<div class="stat"><b>4 yrs</b>Between Olympic Games</div>
+</div></section>
+<section><h2>Why Sports Matter</h2><div class="grid">
+<div class="card"><div class="icon">💪</div><h3>Health</h3><p>Regular play strengthens the heart, muscles and mind, and lowers stress.</p></div>
+<div class="card"><div class="icon">🤝</div><h3>Teamwork</h3><p>Team games teach cooperation, trust and how to win and lose with respect.</p></div>
+<div class="card"><div class="icon">🎯</div><h3>Discipline</h3><p>Training and goals build focus, patience and a habit of hard work.</p></div>
+<div class="card"><div class="icon">🌍</div><h3>Unity</h3><p>Sport connects people across countries, languages and cultures.</p></div>
+</div></section>
+<section id="sports"><h2>Popular Sports</h2><div class="grid">
+<div class="card"><div class="icon">🏏</div><h3>Cricket</h3><p>A bat-and-ball game loved across South Asia, England and Australia.</p><a class="more" href="#cricket">Read more →</a></div>
+<div class="card"><div class="icon">⚽</div><h3>Football</h3><p>The world's most popular sport, played in almost every country.</p><a class="more" href="#football">Read more →</a></div>
+<div class="card"><div class="icon">🏀</div><h3>Basketball</h3><p>A fast, high-scoring game of shooting, passing and teamwork.</p><a class="more" href="#basketball">Read more →</a></div>
+</div></section>
+<section><h2>Other Sports Around the World</h2>
+<ul class="list"><li><b>Hockey:</b> a stick-and-ball team game, very popular in Pakistan, India and Europe.</li><li><b>Tennis:</b> racket sport played one-on-one or in doubles.</li><li><b>Athletics:</b> running, jumping and throwing events at the heart of the Olympics.</li><li><b>Badminton, Volleyball, Swimming, Boxing:</b> loved worldwide at school and professional level.</li></ul></section>
+</main>
+</div>
+<div class="page" id="cricket">
+<div class="hero cricket"><h1>🏏 Cricket</h1><p>A game of patience, skill and sudden drama, played between two teams of eleven.</p></div>
+<main>
+<section><h2>About the Game</h2>
+<p>Cricket is played on a large grass field with a rectangular strip called the <b>pitch</b> in the middle. One team bats and tries to score <b>runs</b>. The other team bowls and fields, trying to get the batters <b>out</b>. The teams then swap roles, and the side with more runs wins.</p></section>
+<section><h2>Formats</h2>
+<table><tr><th>Format</th><th>Length</th><th>Overs per side</th></tr>
+<tr><td>Test</td><td>Up to 5 days</td><td>Unlimited, two innings each</td></tr>
+<tr><td>One Day International (ODI)</td><td>About 1 day</td><td>50</td></tr>
+<tr><td>Twenty20 (T20)</td><td>About 3 hours</td><td>20</td></tr></table></section>
+<section><h2>Key Terms</h2><div class="grid">
+<div class="card"><h3>Over</h3><p>A set of 6 legal balls bowled by one bowler.</p></div>
+<div class="card"><h3>Wicket</h3><p>A batter is out when dismissed, for example bowled, caught or LBW.</p></div>
+<div class="card"><h3>Boundary</h3><p>A shot reaching the rope scores 4 runs, or 6 if it clears the rope.</p></div>
+<div class="card"><h3>Innings</h3><p>A team's turn to bat, ending when 10 batters are out or overs finish.</p></div>
+</div></section>
+<section><h2>Where It Is Loved</h2>
+<p>Cricket is followed passionately in Pakistan, India, Bangladesh, Sri Lanka, England, Australia, South Africa, New Zealand and the West Indies. Big events include the ICC World Cup and T20 leagues played every year.</p>
+<div class="note"><b>Spirit of cricket:</b> respect for the umpire, the opponent and the rules is a big part of the game.</div></section>
+</main>
+</div>
+<div class="page" id="football">
+<div class="hero football"><h1>⚽ Football</h1><p>The beautiful game: two teams, one ball, and a whole world watching.</p></div>
+<main>
+<section><h2>About the Game</h2>
+<p>Football (soccer) is played between two teams of eleven players on a rectangular grass pitch. Players move the ball with their feet, head and body, but only the goalkeeper may use hands inside the penalty area. The team that scores more <b>goals</b> in 90 minutes wins.</p></section>
+<section><h2>Quick Facts</h2><div class="stats">
+<div class="stat"><b>90</b>Minutes, in two halves of 45</div>
+<div class="stat"><b>11</b>Players per team</div>
+<div class="stat"><b>4 yrs</b>Between World Cups</div>
+<div class="stat"><b>1</b>Ball, 2 goals</div></div></section>
+<section><h2>Positions</h2><div class="grid">
+<div class="card"><div class="icon">🧤</div><h3>Goalkeeper</h3><p>Guards the goal and stops shots.</p></div>
+<div class="card"><div class="icon">🛡️</div><h3>Defenders</h3><p>Stop the opposing attackers and protect the goal.</p></div>
+<div class="card"><div class="icon">🎛️</div><h3>Midfielders</h3><p>Connect defence and attack, controlling the game's rhythm.</p></div>
+<div class="card"><div class="icon">🎯</div><h3>Forwards</h3><p>Create chances and score goals.</p></div>
+</div></section>
+<section><h2>Important Rules</h2>
+<ul class="list"><li><b>Offside:</b> an attacker cannot be ahead of the last defender when the ball is passed to them.</li><li><b>Fouls:</b> tripping or pushing gives a free kick, or a penalty inside the box.</li><li><b>Cards:</b> a yellow card is a warning and a red card sends the player off.</li></ul>
+<div class="note">The FIFA World Cup is the biggest tournament, and clubs also play leagues and cups every season.</div></section>
+</main>
+</div>
+<div class="page" id="basketball">
+<div class="hero basketball"><h1>🏀 Basketball</h1><p>Fast, high-flying and full of points: shoot, pass and score through the hoop.</p></div>
+<main>
+<section><h2>About the Game</h2>
+<p>Basketball is played indoors by two teams of five players on a court with a hoop at each end. Teams score by shooting the ball through the opponent's hoop, which is 10 feet (3.05 m) above the ground. The team with the most points at the end wins.</p></section>
+<section><h2>Scoring</h2>
+<table><tr><th>Shot</th><th>Points</th></tr>
+<tr><td>Free throw</td><td>1</td></tr><tr><td>Field goal inside the arc</td><td>2</td></tr><tr><td>Shot from behind the three-point line</td><td>3</td></tr></table></section>
+<section><h2>Basic Rules</h2><div class="grid">
+<div class="card"><h3>Dribbling</h3><p>Players must bounce the ball while moving. Stopping and then dribbling again is a violation.</p></div>
+<div class="card"><h3>Travelling</h3><p>Taking too many steps without dribbling gives the ball to the other team.</p></div>
+<div class="card"><h3>Shot Clock</h3><p>A team must shoot within a set time, which keeps the game fast.</p></div>
+<div class="card"><h3>Fouls</h3><p>Illegal contact gives the other team free throws or possession.</p></div>
+</div></section>
+<section><h2>Did You Know?</h2>
+<p>Basketball was invented in 1891 by Dr. James Naismith, who first used peach baskets as hoops. Today it is played worldwide, from school courts to big professional leagues and the Olympics.</p>
+<div class="note">Teamwork matters: great passing often beats one player trying to do everything.</div></section>
+</main>
+</div>
+<footer><p>&copy; 2026 SportZone. Made with HTML and CSS.</p></footer>
+</body></html>
